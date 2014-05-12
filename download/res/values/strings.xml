@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">download</string>
+    <string name="down">下载</string>
+    <string name="downMp3">下载MP3</string>
+
+</resources>

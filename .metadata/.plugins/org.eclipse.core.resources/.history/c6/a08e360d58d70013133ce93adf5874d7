@@ -1,0 +1,36 @@
+package com.example.download;
+
+import com.example.download.utils.DownUtil;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	private Button down;
+	private TextView myUrl;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initomponents();
+		down.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String url = myUrl.getText().toString();
+				System.out.println(DownUtil.downFile(url));
+				
+			}
+		});
+	}
+	
+	
+	private void initomponents(){
+		down=(Button) findViewById(R.id.down);
+		myUrl = (TextView) findViewById(R.id.myUrl);
+	}
+}

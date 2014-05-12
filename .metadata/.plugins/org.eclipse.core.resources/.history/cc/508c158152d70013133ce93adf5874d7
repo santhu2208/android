@@ -1,0 +1,31 @@
+package com.example.download.utils;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+
+import android.os.Environment;
+
+public class FileUtil {
+
+	public final  static String SDPATH  = Environment.getExternalStorageDirectory()+File.separator;
+	
+	public static File down2SD(String path,String name,InputStream is){
+		File file = null;
+		
+		
+		return file;
+	}
+	
+	public static boolean isFileExist(String filename){
+		File file = new File(SDPATH+filename);
+		return file.exists();
+	}
+	
+	public static File createFile(String filename) throws IOException{
+		File file = new File(SDPATH+filename);
+		file.createNewFile();
+		return file;
+		
+	} 
+}

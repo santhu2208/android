@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Brocast</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_smsrecevier">SMSRecevier</string>
+    <string name="brocast">开启广播</string>
+    <string name="unbrocast">关闭广播</string>
+
+</resources>
