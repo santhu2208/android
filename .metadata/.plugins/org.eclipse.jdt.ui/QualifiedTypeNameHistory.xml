@@ -27,4 +27,6 @@
 <fullyQualifiedTypeName name="com.example.brocast.SMSRecevier"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="com.example.brocast.MainActivity"/>
+<fullyQualifiedTypeName name="android.telephony.SmsManager"/>
+<fullyQualifiedTypeName name="android.telephony.SmsMessage"/>
 </qualifiedTypeNameHistroy>

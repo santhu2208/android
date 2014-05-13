@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.example.download.utils&apos; to &apos;com.yyb.socket.utils&apos;&#x0A;- Original project: &apos;Socket&apos;&#x0A;- Original element: &apos;Socket/src/com.example.download.utils&apos;&#x0A;- Renamed element: &apos;Socket/src/com.yyb.socket.utils&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.example.download.utils&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.example.download.utils" name="com.yyb.socket.utils" qualified="false" references="true" stamp="1399947679408" textual="false" version="1.0"/>
+</session>
