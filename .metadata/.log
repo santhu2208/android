@@ -7478,3 +7478,66 @@ org.eclipse.core.runtime.CoreException: The file is not synchronized with the lo
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2014-05-13 10:00:23.988
 !MESSAGE Failed to load properties file for project 'Socket'
+!SESSION 2014-05-14 09:28:27.029 -----------------------------------------------
+eclipse.buildId=v22.6.2-1085508
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/yubin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/yubin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2014-05-14 09:28:29.707
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-05-14 09:28:29.707
+!MESSAGE A conflict occurred for COMMAND+/:
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@d38d2fc),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@da3a52c),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@72b0f2b2),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@3f0dbef1),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@1f72e08e),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+Binding(COMMAND+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.specific_content_assist.command,Content Assist,
+		A parameterizable command that invokes content assist with a single completion proposal category,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6dc8f3cd,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@23fe500a,,true),[Lorg.eclipse.core.commands.Parameterization;@2ef49ac3),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,user)
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:28:31.008
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
