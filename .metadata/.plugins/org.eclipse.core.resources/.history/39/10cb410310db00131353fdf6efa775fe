@@ -1,0 +1,53 @@
+package com.yyb.mp3player;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class Mp3ListActivity extends ListActivity {
+
+	private static final int UPDATELIST = 1; 
+	private static final int ABOUT = 2; 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_mp3_list);
+	}
+
+	
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		System.out.println("menuseleect");
+		switch (item.getItemId()) {
+		case UPDATELIST:
+			  updateList();
+			break;
+		case ABOUT:
+			 about();
+			break;
+
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+		return true;
+	}
+
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		System.out.println("create menu");
+		menu.add(UPDATELIST, UPDATELIST, UPDATELIST, R.string.update_list);
+		menu.add(ABOUT, ABOUT, ABOUT, R.string.about);
+		return true;
+	}
+	
+	
+	private void updateList(){
+		System.out.println("updateList");
+	}
+	private void about() {
+		System.out.println("about");
+	}
+}

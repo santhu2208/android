@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				System.out.println(DownUtil.downFile("http://wenku.baidu.com/browse/downloadrec?doc_id=ea57c94769eae009581bec59&"));
+				System.out.println(DownUtil.downFile("http://10.0.2.2:8080/Mp3Server/a"));
 				
 			}
 		});
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				int result =DownUtil.downFile("http://wenku.baidu.com/browse/downloadrec?doc_id=ea57c94769eae009581bec59&","yubin","a.mp3");
+				int result =DownUtil.downFile("http://10.0.2.2:8080/Mp3Server/a","yubin","b");
 				if(result==0){
 					System.out.println("down mp3 success");
 				}else if(result ==1){
