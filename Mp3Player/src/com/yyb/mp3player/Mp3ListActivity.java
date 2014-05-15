@@ -29,8 +29,6 @@ public class Mp3ListActivity extends ListActivity {
 
 	private static final int UPDATELIST = 1;
 	private static final int ABOUT = 2;
-    private static final Mp3VO model = new Mp3VO();
-	private static final String[] listColumn =new String[]{model.getMp3Name() ,model.getMp3Size()};
 	private static final int[] toList =new int[]{R.id.mp3Name,R.id.mp3Size};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -69,17 +67,11 @@ public class Mp3ListActivity extends ListActivity {
 	private void updateList() {
 		// 1从服务器下载歌曲信息---
 		String mp3Xml = DownUtil.downFile("http://10.0.2.2:8080/Mp3Server/resource.xml");
+
 		List<Mp3VO> mp3s = praseXml(mp3Xml);
-//		List<Map<String, String>> mp3Map = ModelUtil.model2Map(mp3s);
-		List<Map<String, String>> mp3Map = new ArrayList<Map<String,String>>();
-		for (Mp3VO mp3 :mp3s) {
-			Map<String,String> map = new HashMap<String, String>();
-			map.put("mp3Name", mp3.getMp3Name());
-			map.put("mp3Size", mp3.getMp3Size());
-			mp3Map.add(map);
-		}
+		List<Map<String, String>> mp3Map = ModelUtil.model2Map(mp3s);
 		
-		SimpleAdapter simpleAdapter = new SimpleAdapter(this, mp3Map, R.layout.mp3_item, listColumn, toList);
+		SimpleAdapter simpleAdapter = new SimpleAdapter(this, mp3Map, R.layout.mp3_item, new String[]{"mp3Name","mp3Size"}, toList);
 		setListAdapter(simpleAdapter);
 		
 	}
