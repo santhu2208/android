@@ -1,0 +1,10 @@
+package com.yyb.mp3player.utils;
+
+public class ModelUtil {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

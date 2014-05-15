@@ -1,0 +1,41 @@
+package com.yyb.mp3player.utils;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ModelUtil {
+
+	
+	/**
+	 * 
+	 * @param obj 传入的对象实例
+	 * @return 将对象的属性放入map中
+	 * @throws Exception
+	 */
+	public  Map<String, String> model2Map(Object obj) {
+		Map<String, String> result = new HashMap<String, String>();
+		Class class1 = obj.getClass();
+		Field[] fields = class1.getDeclaredFields();
+		try {
+			for (Field field : fields) {
+				field.setAccessible(true);
+				result.put(field.getName(), field.get(obj) == null ? null : field.get(obj).toString());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		return result;
+	}
+	
+	public  List<Map<String, String>> model2Map(List<Object> objs) {
+		List<Map<String, String>> result = new ArrayList<Map<String,String>>();
+		for (Object obj : objs) {
+			result.add(model2Map(obj)) ;
+		}
+		return result;
+	}
+
+}

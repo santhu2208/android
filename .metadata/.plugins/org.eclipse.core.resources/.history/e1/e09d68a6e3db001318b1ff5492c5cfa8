@@ -1,0 +1,21 @@
+package com.yyb.mp3player.utils;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ModelUtil {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static Map<String,String> model2Map(Object obj){
+		Map<String,String> result = new HashMap<String, String>();
+		Class class1 = obj.getClass();
+		
+		
+		return result;
+	}
+
+}

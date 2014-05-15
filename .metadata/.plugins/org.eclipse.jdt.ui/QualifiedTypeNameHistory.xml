@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="android.os.Environment"/>
 <fullyQualifiedTypeName name="com.example.download.utils.FileUtil"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.example.download.R.layout"/>
 <fullyQualifiedTypeName name="com.example.download.R.id"/>
 <fullyQualifiedTypeName name="com.example.download.utils.DownUtil"/>
@@ -37,4 +36,23 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.yyb.socket.utils.FileUtil"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.utils.Mp3Handler"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.utils.DownUtil"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.R"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.R.string"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.R.layout"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.R.id"/>
+<fullyQualifiedTypeName name="android.widget.SimpleAdapter"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.utils.ModelUtil"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.yyb.mp3player.model.Mp3VO"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

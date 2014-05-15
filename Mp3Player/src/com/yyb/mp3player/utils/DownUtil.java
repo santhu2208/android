@@ -7,6 +7,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 
+import com.yyb.mp3player.R;
+
+import android.widget.Toast;
+
 public class DownUtil {
 	private static URL url =null;
 	/*
@@ -32,7 +36,6 @@ public class DownUtil {
 		String line =null;
 		try {
 			  br= new BufferedReader(new InputStreamReader(is, "utf-8"));
-			
 			while((line=br.readLine())!=null){
 				sBuffer.append(line);
 			}

@@ -1,0 +1,5 @@
+package com.yyb.mp3player.model;
+
+public class Mp3VO {
+
+}

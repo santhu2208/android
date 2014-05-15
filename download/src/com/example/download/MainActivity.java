@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				System.out.println(DownUtil.downFile("http://10.0.2.2:8080/Mp3Server/a"));
+				System.out.println(DownUtil.downFile("http://10.0.2.2:8080/Mp3Server/resource.xml"));
 				
 			}
 		});

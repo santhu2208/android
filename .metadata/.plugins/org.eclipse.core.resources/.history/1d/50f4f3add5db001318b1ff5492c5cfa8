@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <resurce>
+     <id><0001</id>
+     <mp3.name>rolling.mp3</mp3.name>
+     <mp3.size>9134625</mp3.size>
+     <lrc.name>rolling.lrc</lrc.name>
+     <lrc.size>2454</lrc.size>
+  </resurce>
+ <resurce>
+      <id>0002</id>
+    <mp3.name>rolling2.mp3</mp3.name>
+     <mp3.size>9134625</mp3.size>
+     <lrc.name>rolling2.lrc</lrc.name>
+     <lrc.size>2454</lrc.size>
+  </resurce>
+</resources>
+
+
+
