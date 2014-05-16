@@ -1623,3 +1623,6 @@ Binding(CTRL+SHIFT+ARROW_LEFT,
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2014-05-16 14:42:28.851
 !MESSAGE Warning: Ignoring name conflict in resource file for name hello_world
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-05-16 16:55:27.889
+!MESSAGE Failed to load properties file for project 'widgets'

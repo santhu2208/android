@@ -1,0 +1,7 @@
+package com.yyb.widgets;
+
+import android.appwidget.AppWidgetProvider;
+
+public class ExampleAppWidgetProvider extends AppWidgetProvider {
+
+}
