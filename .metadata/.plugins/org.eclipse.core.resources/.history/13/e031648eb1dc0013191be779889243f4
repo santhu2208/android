@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+
+    
+    <TextView android:id="@+id/groupTo"
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="5px"
+        android:paddingBottom="10px"
+        android:textSize="18sp"
+        android:text="no data"/>
+
+</RelativeLayout>

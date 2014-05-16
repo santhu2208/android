@@ -1,0 +1,48 @@
+package com.yyb.spinner;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.SeekBar;
+
+public class SeekBarActivity extends Activity {
+
+	private SeekBar seekBar;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_seek_bar);
+		initComponent();
+		seekBar.setOnSeekBarChangeListener(new SeekBarListener());
+	
+		
+	}
+	
+	protected class SeekBarListener implements SeekBar.OnSeekBarChangeListener{
+
+		@Override
+		public void onProgressChanged(SeekBar seekBar, int progress,
+				boolean fromUser) {
+			System.out.println(seekBar.getProgress() +"  "+progress);
+			
+		}
+
+		@Override
+		public void onStartTrackingTouch(SeekBar seekBar) {
+			System.out.println(seekBar.getProgress());
+			
+		}
+
+		@Override
+		public void onStopTrackingTouch(SeekBar seekBar) {
+			System.out.println(seekBar.getProgress());
+		}
+		
+	}
+
+	private void initComponent() {
+		seekBar = (SeekBar) findViewById(R.id.mySeekBar);
+		
+	}
+}

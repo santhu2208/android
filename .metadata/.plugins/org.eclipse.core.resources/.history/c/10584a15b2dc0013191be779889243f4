@@ -1,0 +1,26 @@
+package com.yyb.spinner;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.ExpandableListActivity;
+import android.os.Bundle;
+
+public class ExpandListActivity extends ExpandableListActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_expand_list);
+		createList();
+	}
+
+	private void createList() {
+		List<Map<String,String>> group1 = new ArrayList<Map<String,String>>();
+		
+	}
+	
+	
+}

@@ -43,11 +43,9 @@
 <fullyQualifiedTypeName name="com.yyb.mp3player.R"/>
 <fullyQualifiedTypeName name="com.yyb.mp3player.R.string"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.yyb.mp3player.R.layout"/>
 <fullyQualifiedTypeName name="com.yyb.mp3player.R.id"/>
 <fullyQualifiedTypeName name="android.widget.SimpleAdapter"/>
@@ -55,4 +53,6 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.yyb.mp3player.model.Mp3VO"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

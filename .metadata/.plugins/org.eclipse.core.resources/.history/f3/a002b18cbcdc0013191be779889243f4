@@ -1,0 +1,51 @@
+package com.yyb.spinner;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.ExpandableListActivity;
+import android.os.Bundle;
+
+public class ExpandListActivity extends ExpandableListActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_expand_list);
+		createList();
+	}
+
+	private void createList() {
+		List<Map<String,String>> groups = new ArrayList<Map<String,String>>();
+		Map<String,String> group1 =new HashMap<String, String>();
+		group1.put("group", "group1");
+		Map<String,String> group2 =new HashMap<String, String>();
+		group2.put("group", "group2");
+		groups.add(group1);
+		groups.add(group2);
+		
+		List<Map<String,String>> child1 = new ArrayList<Map<String,String>>();
+		Map<String,String> childData1 =new HashMap<String, String>();
+		group1.put("child", "childdata1");
+		Map<String,String> childData2 =new HashMap<String, String>();
+		group2.put("child", "childdata2");
+		child1.add(childData1);
+		child1.add(childData2);
+		
+		List<Map<String,String>> child2 = new ArrayList<Map<String,String>>();
+		Map<String,String> child2Data1 =new HashMap<String, String>();
+		child2Data1.put("child", "child2Data1");
+		Map<String,String> child2Data2 =new HashMap<String, String>();
+		child2Data2.put("child", "child2Data2");
+		child2.add(childData1);
+		child2.add(childData2);
+		
+		
+		
+		
+	}
+	
+	
+}

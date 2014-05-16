@@ -1,0 +1,32 @@
+package com.yybdatepickerdialog;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	private Button myButton;
+	private static final int DATE_PICKER_ID=1;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initComponents();
+		myButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+              showDialog(DATE_PICKER_ID);
+			}
+		});
+	}
+	private void initComponents() {
+      myButton = (Button) findViewById(R.id.showDateDialog);		
+	}
+	
+	
+	
+}
