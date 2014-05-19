@@ -232,7 +232,8 @@ int drawable abc_textfield_searchview_holo_dark 0x7f020053
 int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
-int drawable ic_launcher 0x7f020057
+int drawable ic_action_call 0x7f020057
+int drawable ic_launcher 0x7f020058
 int id action_bar 0x7f06001c
 int id action_bar_activity_content 0x7f060015
 int id action_bar_container 0x7f06001b
@@ -265,6 +266,9 @@ int id image 0x7f060027
 int id listMode 0x7f060001
 int id list_item 0x7f060029
 int id middle 0x7f060012
+int id mybutton 0x7f06003e
+int id myimage 0x7f06003d
+int id mytext 0x7f06003c
 int id never 0x7f060009
 int id none 0x7f060010
 int id normal 0x7f060000
