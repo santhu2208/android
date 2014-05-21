@@ -1,0 +1,62 @@
+package com.yyb.animationslayout;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+
+public class MainActivity extends ListActivity {
+
+	private Button myButton ;
+	private ListView listView;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initomponents();
+		myButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+	}
+	
+	private void initomponents() {
+		myButton=(Button) findViewById(R.id.myButton);
+		listView = getListView();
+	}
+
+	private ListAdapter buildAdapter(){
+		List<Map<String,String>> list = new ArrayList<Map<String,String>>();
+		Map<String,String> map=new HashMap<String, String>();
+		map.put("name", "map");
+		map.put("size", "12");
+		Map<String,String> map1=new HashMap<String, String>();
+		map1.put("name", "map1");
+		map1.put("size", "12");
+		Map<String,String> map2=new HashMap<String, String>();
+		map2.put("name", "map2");
+		map2.put("size", "12");
+		list.add(map);
+		list.add(map1);
+		list.add(map2);
+		
+		SimpleAdapter simpleAdapter =new SimpleAdapter(this,list,R.layout.item,new String[]{"name","size"},new int[]{R.id.name,R.id.size});
+		
+		return simpleAdapter;
+	}
+	
+}

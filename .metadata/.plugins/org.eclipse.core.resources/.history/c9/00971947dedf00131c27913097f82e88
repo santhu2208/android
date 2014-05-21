@@ -1,0 +1,29 @@
+package com.yyb.animationslayout;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+	
+	private ListAdapter buildAdapter(){
+		List<Map<String,String>> list = new ArrayList<Map<String,String>>();
+		
+		
+		SimpleAdapter simpleAdapter =new SimpleAdapter(this,list,R.layout.item,new String[]{"",""},new int[]{});
+		
+		return simpleAdapter;
+	}
+	
+}

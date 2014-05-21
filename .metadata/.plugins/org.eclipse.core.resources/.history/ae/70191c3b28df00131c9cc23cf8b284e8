@@ -1,0 +1,57 @@
+package com.yyb.animations;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.widget.Button;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity {
+
+	private ImageView myImage;
+	private Button myRotate;
+	private Button myScale;
+	private Button myAlpha;
+	private Button myTranslate;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initCompents();
+	}
+	private void initCompents() {
+		myImage =(ImageView)findViewById(R.id.myImage);
+		myRotate = (Button) findViewById(R.id.myRotate);
+		myScale = (Button) findViewById(R.id.myScale);
+		myAlpha = (Button) findViewById(R.id.myAlpha);
+		myTranslate = (Button) findViewById(R.id.myTranslate);
+	}
+	
+	class OnclickRotateListener implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			
+		}
+		
+	}
+	
+	private void animals(Animation animation){
+		AnimationSet animationSet =new AnimationSet(true);
+		if(animation instanceof AlphaAnimation){
+			AlphaAnimation alphaAnimation =(AlphaAnimation)animation;
+			
+			animationSet.addAnimation(alphaAnimation);
+		}else if(){
+			
+		}
+		animationSet.setDuration(2000);
+		myImage.startAnimation(animationSet);
+		
+	} 
+	
+}

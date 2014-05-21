@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;animationsLayout/res/layout/mp3_item.xml&apos; to &apos;item.xml&apos;" description="Rename resource &apos;mp3_item.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/mp3_item.xml" name="item.xml" stamp="1400563047074" updateReferences="true"/>
+</session>

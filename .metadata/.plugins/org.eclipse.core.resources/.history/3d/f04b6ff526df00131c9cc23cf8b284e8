@@ -1,0 +1,29 @@
+package com.yyb.animations;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity {
+
+	private ImageView myImage;
+	private Button myRotate;
+	private Button myScale;
+	private Button myAlpha;
+	private Button myTranslate;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initCompents();
+	}
+	private void initCompents() {
+		myRotate = (Button) findViewById(R.id.myRotate);
+		myScale = (Button) findViewById(R.id.myScale);
+		myAlpha = (Button) findViewById(R.id.myAlpha);
+		myTranslate = (Button) findViewById(R.id.myTranslate);
+		
+	}
+	
+}
